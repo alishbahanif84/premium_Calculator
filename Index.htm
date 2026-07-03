@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+    <button id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="theme-colors">
+
+    <span class="orange active" data-color="#ff7b00"></span>
+
+    <span class="blue" data-color="#3b82f6"></span>
+
+    <span class="green" data-color="#22c55e"></span>
+
+    <span class="purple" data-color="#8b5cf6"></span>
+
+</div>
+<!-- Header -->
+<div class="header">
+
+    <h1>
+        <i class="fa-solid fa-calculator"></i>
+        Premium Calculator
+    </h1>
+
+    <p>
+        HTML • CSS • JavaScript
+    </p>
+
+</div>
+<div class="datetime">
+
+    <div id="date"></div>
+
+    <div id="clock"></div>
+
+</div>
+    <div class="container">
+
+        <!-- History -->
+        <div class="history-panel">
+            <h3>History</h3>
+
+            <ul id="history-list">
+            </ul>
+
+            <button id="clear-history">
+                Clear History
+            </button>
+        </div>
+
+        <!-- Calculator -->
+        <div class="calculator">
+
+            <!-- Display -->
+            <div class="display">
+
+                <input
+                    type="text"
+                    id="result"
+                    readonly
+                    placeholder="0">
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="clear">C</button>
+                <button class="delete">⌫</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+
+                <button>0</button>
+                <button>.</button>
+
+                <button class="equal">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
